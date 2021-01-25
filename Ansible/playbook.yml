@@ -1,0 +1,7 @@
+---
+- name: Configure instance with playbook
+  hosts: web
+  become: true
+  gather_facts: true
+  roles:
+    - web
